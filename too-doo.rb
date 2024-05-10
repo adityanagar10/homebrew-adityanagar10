@@ -5,11 +5,11 @@
 class TooDoo < Formula
   desc ""
   homepage "https://github.com/adityanagar10/too-doo"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.3/too-doo_0.0.3_darwin_all.tar.gz"
-    sha256 "39b3c072611ce0d5cca8c79e54ab1e8218a4178b5613e651711242611feaffff"
+    url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.4/too-doo_0.0.4_darwin_all.tar.gz"
+    sha256 "8a69ad737e1f1150d99af5cc08fda46464a8c1ce4a38a99c1a3bcc90db5689df"
 
     def install
       bin.install "too-doo"
@@ -18,16 +18,16 @@ class TooDoo < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.3/too-doo_0.0.3_linux_amd64.tar.gz"
-      sha256 "1b8b71f009c5236309655712aa3a4c2168c252b04825307437579d0a7211d800"
+      url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.4/too-doo_0.0.4_linux_amd64.tar.gz"
+      sha256 "a913da0b61c82e2ddb3f7f3ad3a91c995150a93d14972b29967e3da3404a207d"
 
       def install
         bin.install "too-doo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.3/too-doo_0.0.3_linux_arm64.tar.gz"
-      sha256 "ca0de646e4763b363c8b9d5390a52dcb98fb4cf5e0a72f693e8054b7f6146e26"
+      url "https://github.com/adityanagar10/too-doo/releases/download/v0.0.4/too-doo_0.0.4_linux_arm64.tar.gz"
+      sha256 "63883666400aae5b654b7336c80712a4e87678343506125bf913a85e8c50acb3"
 
       def install
         bin.install "too-doo"
